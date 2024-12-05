@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &511000341
+--- !u!1 &1162060713
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,9 +131,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 511000344}
-  - component: {fileID: 511000343}
-  - component: {fileID: 511000342}
+  - component: {fileID: 1162060716}
+  - component: {fileID: 1162060715}
+  - component: {fileID: 1162060714}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -141,21 +141,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &511000342
+--- !u!81 &1162060714
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 511000341}
+  m_GameObject: {fileID: 1162060713}
   m_Enabled: 1
---- !u!20 &511000343
+--- !u!20 &1162060715
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 511000341}
+  m_GameObject: {fileID: 1162060713}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -200,13 +200,13 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!4 &511000344
+--- !u!4 &1162060716
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 511000341}
+  m_GameObject: {fileID: 1162060713}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
@@ -215,80 +215,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &754510355
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 754510357}
-  - component: {fileID: 754510356}
-  - component: {fileID: 754510358}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &754510356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 754510355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5aca85e1325924663a517761190ed059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Coin: {fileID: 6520419098771320470, guid: 5bb47fd8371c1417eb1cfb968c799ec2, type: 3}
-  Box: {fileID: 1790949912563666390, guid: 9a5d58a2cbffd4efdbde512567bdaafc, type: 3}
-  Triangle: {fileID: 2303789068886986837, guid: 9fe10d76f6bf34212bbf0006ea6f3461, type: 3}
-  MaxX: 7.66
-  MinX: 1.94
-  MaxY: 3.73
-  MinY: -2.63
---- !u!4 &754510357
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 754510355}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.59, y: -2.09, z: -0.004199546}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &754510358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 754510355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 115e223ac159b4180b8e1616fddb5995, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Platform1: {fileID: 6736118571885312414, guid: 1713678baa74f4d8a80209e42b47ae46, type: 3}
-  Platform2: {fileID: 2506024646826652846, guid: c135296937a8a45a7b7a47f693a1af63, type: 3}
-  Platform3: {fileID: 6408154808063395410, guid: ecc0fe82e41cc4ed1a7fcb95b6bd49cb, type: 3}
-  MaxX: 6
-  MinX: -6
-  MaxY: 2
-  MinY: -2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 511000344}
-  - {fileID: 754510357}
+  - {fileID: 1162060716}
