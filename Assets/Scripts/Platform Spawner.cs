@@ -53,7 +53,7 @@ public class PlatformSpawner : MonoBehaviour
 
         //Spawn selected object
         Instantiate(item, randPosition, Quaternion.identity);
-        yield return new WaitForSeconds(Random.Range(2,4));
+        yield return new WaitForSeconds(Random.Range(8,15));
         canSpawn = true;
     }
 

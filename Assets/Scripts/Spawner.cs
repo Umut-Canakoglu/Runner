@@ -6,9 +6,8 @@ public class Spawner : MonoBehaviour
 {
     //Spawning Objects
     [Header("Spawning Objects")]
-    public GameObject Coin;
-    public GameObject Box;
-    public GameObject Triangle;
+    public GameObject Enemy1;
+    public GameObject Enemy2;
 
     //Random Position
     [Header("Random Position")]
@@ -44,16 +43,14 @@ public class Spawner : MonoBehaviour
         //Select random object
         int pickedItem = Random.Range(0,3);
         if(pickedItem == 0){
-            item = Coin;
+            item = Enemy1;
         } else if(pickedItem == 1){
-            item = Box;
-        } else if(pickedItem == 2){
-            item = Triangle;
+            item = Enemy2;
         }
 
         //Spawn selected object
         Instantiate(item, randPosition, Quaternion.identity);
-        yield return new WaitForSeconds(Random.Range(2,4));
+        yield return new WaitForSeconds(Random.Range(8,11));
         canSpawn = true;
     }
 
