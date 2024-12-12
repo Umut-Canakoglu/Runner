@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
     {
         transform = GetComponent<Transform>();
         pointA = new Vector2(transform.position.x, 4);
-        pointB = new Vector2(transform.position.x, -1);   
+        pointB = new Vector2(transform.position.x, -2.8f);   
     }
 
     // Update is called once per frame
@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
             goDown = true;
         }
 
-        if(transform.position.y <= -1)
+        if(transform.position.y <= -2.8f)
         {
             goDown = false;
         }
